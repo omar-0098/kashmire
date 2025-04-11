@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كشمير هوم | Kashmir Home</title>
+    <link rel="icon" href="">
+     <!-- font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet"> 
+     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+     <!-- css -->
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+   
+    <!-- start-cart -->
+     <div class="cart">
+        <div class="top_cart">
+            <h3>المنتاجات : <span class="Count_item_cart">0</span></h3>
+            <span onclick="open_close_cart()" class="close_cart"><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+
+
+
+        <div class="items_in_cart" id="cart_items">
+  
+
+        </div>
+
+
+        <div class="bottom_cart">
+            <div class="total">
+                <p>السعر</p>
+                <p class="price_cart_total">0</p>
+            </div>
+
+
+            <div class="button_cart">
+                <a href="chexkout.html" class="btn_cart btn">شراء</a>
+              <a href="shop.html" class="btn_cart btn"><span onclick="open_close_cart()" class="btn_cart trans_bg btn">تسوق</span></a>  
+            
+            </div>
+        </div>
+
+        
+     </div>
+    <!-- end-cart -->
+
+
+    <!-- start-header -->
+    <header>
+        <div class="top_header">
+            <div class="container">
+                <a href="" class="logo"><img src="img/logo.png"></a>
+
+                <form action="" class="search_box">
+
+                    <!-- <div class="select_box">
+                        <select id="category" name="category">
+                            <option value="omar">omar</option>
+                            <option value="omar">omar</option>
+                            <option value="omar">omar</option>
+                            <option value="omar">omar</option>
+                            <option value="omar">omar</option>
+                            <option value="omar">omar</option>
+
+     
+                        </select>
+                    </div> -->
+
+                    
+                    <input type="text" id="search" name="search" placeholder=" ابدأ البحث..." required>
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                </form>
+
+                <div class="header_icons">
+                    <div class="icon">
+                        <!-- <a href="">
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="count count_favourite">0</span>
+                        </a> -->
+                    </div>
+
+                    <div onclick="open_close_cart()" class="icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="count count_item_header">0</span>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bottom_header">
+            <div class="container">
+                <nav class="nav">
+                    <span onclick="open_Menu()" class="open_menu"><i class="fa-solid fa-bars"></i></span>
+                    <div class="category_nav">
+                        <div onclick="Open_Categ_list()" class="category_btn">
+                            <i class="fa-solid fa-bars"></i>
+                            <p>المنتجات</p>
+                            <i class="fa-solid fa-sort-down"></i>
+                        </div>
+
+
+                        <div class="categoru_nav_list">
+                            <a href="feyat/feyat1.html">الفواط</a>
+                            <a href="">الملايات</a>
+                            <a href="">البرانس</a>
+                            <a href="">البطاطين</a>
+                            <a href="">اللحاف</a>
+                            <!-- <a href="">omar omar</a> -->
+                        </div>
+
+                    </div>
+
+
+                    <ul class="nav_links">
+
+                        <span onclick="open_Menu()" class="close_menu"><i class="fa-regular fa-circle-xmark"></i></span>
+
+                        <li class="active"><a href="shop.html">الرئيسية</a></li>
+                        <li><a href="#el_orode">العروض</a></li>
+                        <li><a href="#elaksar_mabia">الاكثر مبيعاََ</a></li>
+                        <li><a href="chexkout.html">المشتريات</a></li>
+                        <li><a href="callme.html">المساعدة </a></li>
+
+                    </ul>
+
+
+                </nav>
+
+
+
+                <!-- <div class="login_signup btns">
+                    <a href="" class="btn">Login <i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="" class="btn">sign Up <i class="fa-solid fa-user-plus"></i></a>
+                </div> -->
+
+            </div>
+        </div>
+
+    </header>
+    <!-- end-header -->
+
+  
+
+    <!-- start-slider -->
+    <div class="slider">
+        <div class="container">
+            <!-- swiper -->
+            <div class="slide_swp mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href=""><img src="img/banner_home1.png" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href=""><img src="img/banner_home2.png" alt=""></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href=""><img src="img/banner_home3.png" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- <div class="banner_2">
+                <a href=""><img src="image_fx_ (1).jpg" alt=""></a>
+            </div> -->
+
+        </div>
+    </div>
+    <!-- end-slider -->
+
+
+    <!-- start-banners1 -->
+    <div class="banners_4" >
+        <div class="container">
+            <!--  -->
+            <div class="box">
+                <a href="" class="link_btn"></a>
+
+                <img src="img/banner3_1.png" alt="">
+                <div class="text">
+                    <h5>break bass</h5>
+                    <h5>dasls on this</h5>
+                    <div class="sale">
+                        <p>Up <br> to</p>
+                        <span>70%</span>
+                    </div>
+                    <h6>shop new</h6>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="box">
+                <a href="#swiper_elctronics" class="link_btn"></a>
+
+                <img src="img/banner3_2.png" alt="">
+                <div class="text">
+                    <h5>break bass</h5>
+                    <h5>dasls on this</h5>
+                    <div class="sale">
+                        <p>Up <br> to</p>
+                        <span>70%</span>         
+                    </div>
+                    <h6>shop new</h6>
+                </div>
+            </div>
+
+            <!--  -->
+            <!-- هنا في لينك لل هيدر -->
+            <div class="box">
+                <a href="" class="link_btn"  id="el_orode"></a>
+
+                <img src="img/banner3_3.png" alt="">
+                <div class="text">
+                    <h5>break bass</h5>
+                    <h5>dasls on this</h5>
+                    <div class="sale">
+                        <p>Up <br> to</p>
+                        <span>70%</span>                    
+                    </div>
+                    <h6>shop new</h6>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="box">
+                <a href="" class="link_btn"></a>
+
+                <img src="img/banner3_4.png" alt="">
+                <div class="text">
+                    <h5>break bass</h5>
+                    <h5>dasls on this</h5>
+                    <div class="sale">
+                        <p>Up <br> to</p>
+                        <span>70%</span>
+                    </div>
+                    <h6>shop new</h6>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <!-- end-banners -->
+
+    
+
+    <!-- start-products-1 -->
+    <div class="slider_products slide omar11" > 
+
+        <div class="container">
+
+            <div class="slide_product mySwiper">
+
+                <div class="top_slide">
+                    <h2 id="swiper_items_sale1"> <i class="fa-solid fa-thumbs-up"></i> العروضات</h2>
+                </div>
+
+
+                <div class="products swiper-wrapper" id="swiper_items_sale">
+            
+
+                </div>
+
+
+                <div class="swiper-button-next btn_swip"></div>
+                <div class="swiper-button-prev btn_swip"></div>
+
+            </div>
+
+
+        </div>
+    </div> 
+    <!-- end-products -->
+
+
+    <div class="text_work">
+        <div class="container">
+            <marquee direction="left"><pre>                 🌟 أسرع واطلب الآن! كشمير هوم يمنحك تجربة راقية بلا حدود                    منزلك يستحق الأفضل – اختر كشمير هوم لجودة تدوم!💖                    جودة استثنائية مع كشمير هوم – لأن الفخامة تبدأ من هنا!</pre></marquee>
+        </div>
+    </div>
+
+   
+
+
+    <!-- start-banners-2 -->
+     <div class="banners" >
+        <div class="container">
+            <div class="banners_boxs banner_2_img">
+                <a href="" class="box"><img src="img/banner_box4.jpg" alt=""></a>
+                <a href="" class="box"><img src="img/banner_box5.jpg" alt=""></a>
+
+            </div>
+        </div>
+    </div> 
+    <!-- end-banners-2 -->
+
+  
+  <div class="swipernostop container">
+            <div><h1>اشتري من<span> براندات رسمية</span></h1></div>
+        <div class="swiper-wrapper ">
+            <div class="swiper-slide"><img src="img/swiper-no-stop/elsrougy - Copy.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/swiper-no-stop/kinzo - Copy.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/swiper-no-stop/mora.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/swiper-no-stop/royal.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/swiper-no-stop/zahar.jpeg" alt=""></div> 
+            <div class="swiper-slide" id="elaksar_mabia"><img src="img/swiper-no-stop/elsrougy - Copy.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/swiper-no-stop/kinzo - Copy.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/swiper-no-stop/mora.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/swiper-no-stop/royal.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/swiper-no-stop/zahar.jpeg" alt=""></div> 
+            <div class="swiper-slide"><img src="img/swiper-no-stop/elsrougy - Copy.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/swiper-no-stop/kinzo - Copy.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/swiper-no-stop/mora.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/swiper-no-stop/royal.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/swiper-no-stop/zahar.jpeg" alt=""></div> 
+        </div>
+    </div>
+
+
+    <!-- start-products-2 -->
+     <div class="slider_products slide">
+
+        <div class="container">
+
+            <div class="slide_product mySwiper">
+
+                <div class="top_slide">
+                    <h2> <i class="fa-solid fa-cart-shopping"></i> الاكثر مبيعاََ</h2>
+                </div>
+
+
+                <div class="products swiper-wrapper" id="swiper_Bestseller">
+            
+
+                </div>
+
+
+                <div class="swiper-button-next btn_swip"></div>
+                <div class="swiper-button-prev btn_swip"></div>
+
+            </div>
+
+
+        </div>
+    </div> 
+    <!-- end-products-2 -->
+
+
+
+ <!-- start-banners-3-->
+  <div class="banners">
+    <div class="container">
+        <div class="banners_boxs banner_3_img">
+            <a href="" class="box"><img src="img/banner_box1.jpg" alt=""></a>
+            <a href="" class="box"><img src="img/banner_box2.jpg" alt=""></a>
+            <a href="" class="box"><img src="img/banner_box3.jpg" alt=""></a>
+        </div>
+    </div>
+</div>
+<!-- end-banners-3 -->
+
+
+
+
+   <!-- start-products-3 -->
+   <div class="slider_products slide">
+
+    <div class="container">
+
+        <div class="slide_product mySwiper">
+
+            <div class="top_slide">
+                <h2> <i class="fa-solid fa-thumbs-up"></i> بعض من منتجاتنا</h2>
+            </div>
+
+
+            <div class="products swiper-wrapper" id="swiper_Ourproduct">
+        
+
+            </div>
+
+
+            <div class="swiper-button-next btn_swip"></div>
+            <div class="swiper-button-prev btn_swip"></div>
+
+        </div>
+
+
+    </div>
+</div>
+  <!-- end-products-3 -->
+
+
+ <!-- start-scroll -->
+ <div class="scroll-all" onclick="scrollToTop()">
+    <div class="container">
+        <div class="scroll">
+            <h1>الذهاب للأعلي</h1>
+        </div>
+    </div>
+</div>
+    <!-- end-scroll -->
+
+
+
+<!-- start-footer -->
+<footer>
+    <div class="container">
+        <div class="big_row">
+            <img class="logo_footer" src="img/logo.png" alt="">
+
+            <p>العنوان : <span> القاهره  53  شارع الغوريه أمام محل كامل الشيمي للأحذية أو جيكوريلا </span></p>
+            <div class="icons_footer">
+                <a target="_blank" href="https://www.facebook.com/p/%D9%83%D8%B4%D9%85%D9%8A%D8%B1-%D9%87%D9%88%D9%85-kashmir-home-100064031503557/"><i class="fa-brands fa-facebook"></i></a>
+                <a target="_blank" href="https://www.instagram.com/kashmir_home_center/?fbclid=IwY2xjawHwa8xleHRuA2FlbQIxMAABHc8LrSfm4Gu37osiGk8MTGyptSigZZqTQ0WbYC1CRy2d4y0JmsYTbUiQzQ_aem_W7NnxJhHGMWugD_WC8i6EQ#"><i class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=%2B201010041472&context=ARAy2xi93g5yf72FiHmTXFWRcvwBgyq9NUX2LuHsj_AWg0xEmtekuZs3IXMX1hMp8V7bSq0Jgf-aBv-5iep3-X0SXNhd5IBjFM1bTusRRXouJLh6iy5FGfcitDtTzHuojYXiEVdrUZooDGC5wtiFjbKzbQ&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawHwbElleHRuA2FlbQIxMAABHXhnfrs171NSFDIMe2RcneJshrx2Im6awwZM0nFl90Rust26YFELKhMlFA_aem_0Wv2MV_zACi38waNugS6wA"><i class="fa-brands fa-whatsapp"></i></a>                
+                <a target="_blank" href="tel:+201150424983"><h1 class="telephone" ><i class="fa-solid fa-phone"></i></h1></a>
+                <h2 class="telephone1">01028604523</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <h4>المنتجات</h4>
+
+
+            <div class="links">
+                <a href=""><i class="fa-solid fa-caret-left"></i>الفواط</a>
+                <a href=""><i class="fa-solid fa-caret-left"></i>البطاطين</a>
+                <a href=""><i class="fa-solid fa-caret-left"></i> الملايات</a>
+                <a href=""><i class="fa-solid fa-caret-left"></i> اللحاف</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <h4>تسوق معانا</h4>
+
+
+            <div class="links">
+                <a href="shop.html"><i class="fa-solid fa-caret-left"></i> الرئيسية</a>
+                <a href="#el_orode"><i class="fa-solid fa-caret-left"></i>العروض</a>
+                <a href="#elaksar_mabia"><i class="fa-solid fa-caret-left"></i>الاكثر مبيعاََ</a>
+                <a href="chexkout.html"><i class="fa-solid fa-caret-left"></i>المشتريات</a>
+                <a href="callme.html"><i class="fa-solid fa-caret-left"></i>المساعدة</a>
+                <!-- <a href=""><i class="fa-solid fa-caret-right"></i> computer</a> -->
+            </div>
+        </div>
+
+
+        <div class="row">
+            <h4>تواصل معانا</h4>
+
+
+            <div class="links">
+                <a href="https://www.facebook.com/p/%D9%83%D8%B4%D9%85%D9%8A%D8%B1-%D9%87%D9%88%D9%85-kashmir-home-100064031503557/"><i class="fa-solid fa-caret-left"></i> فيسبوك</a>
+                <a href="https://www.instagram.com/kashmir_home_center/?fbclid=IwY2xjawHwa8xleHRuA2FlbQIxMAABHc8LrSfm4Gu37osiGk8MTGyptSigZZqTQ0WbYC1CRy2d4y0JmsYTbUiQzQ_aem_W7NnxJhHGMWugD_WC8i6EQ#"><i class="fa-solid fa-caret-left"></i> انستجرام</a>
+                <a href="https://api.whatsapp.com/send?phone=%2B201010041472&context=ARAy2xi93g5yf72FiHmTXFWRcvwBgyq9NUX2LuHsj_AWg0xEmtekuZs3IXMX1hMp8V7bSq0Jgf-aBv-5iep3-X0SXNhd5IBjFM1bTusRRXouJLh6iy5FGfcitDtTzHuojYXiEVdrUZooDGC5wtiFjbKzbQ&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawHwbElleHRuA2FlbQIxMAABHXhnfrs171NSFDIMe2RcneJshrx2Im6awwZM0nFl90Rust26YFELKhMlFA_aem_0Wv2MV_zACi38waNugS6wA"><i class="fa-solid fa-caret-left"></i> الواتس</a>
+                <a href="tel:+"><i class="fa-solid fa-caret-left"></i> الهاتف</a>
+        
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bottom_footer">
+        <div class="container">
+            <p>&copy; <span>kashmir home</span> All Right Reserved.</p>
+
+            <div class="payment_img">
+                <img src="img/payment_method.png" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end-footer -->
+ 
+
+
+
+
+
+
+
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+<!-- fill -->
+
+<script src="js/swiper.js"></script>
+<script src="js/items_home_shop.js"></script>
+<script src="js/main.js"></script>
+<script src="js/omar.js"></script>
+</body>
+</html>

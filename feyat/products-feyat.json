@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "img": "../img/product/2.png",
+    "name": "وسادة خصر مبطنة مثالية للرضاعة الطبيعية مختلط أبيض One Size cm",
+    "price": 350,
+    "catetory":"feyat_three"
+  },
+  {
+    "id": 20,
+    "img": "../img/product/1.png",
+    "name": "Redmi 13C Dual SIM with 6GB RAM",
+    "price": 280,
+    "catetory":"feyat_three"
+  },
+
+  {
+    "id": 21,
+    "img": "../img/product/4.png",
+    "name": "OPPO A18 128GB 4GB Glowing Black",
+    "price": 250,
+    "catetory":"elaksar",
+    "word":"الاكثر مبيعا"
+  },
+  {
+    "id": 88,
+    "img": "../img/product/4.png",
+    "name": "OPPO A18 128GB 4GB Glowing Black",
+    "price": 250,
+    "catetory":"elaksar",
+    "word":"الاكثر مبيعا"
+  },
+  {
+    "id":22,
+    "img": "../img/product/4.png",
+    "name": "OPPO A18 128GB 4GB Glowing Black",
+    "price": 250,
+    "old_price":700,
+    "catetory":"elaksar",
+    "word":"الاكثر مبيعا"
+  },
+  {
+    "id": 23,
+    "img": "../img/product/4.png",
+    "name": "OPPO A18 128GB 4GB Glowing Black",
+    "price": 250,
+    "old_price":700,
+    "catetory":"feyat_four"
+  },
+  {
+    "id": 24,
+    "img": "../img/product/4.png",
+    "name": "OPPO A18 128GB 4GB Glowing Black",
+    "price": 250,
+    "old_price":700,
+    "catetory":"feyat_four"
+  },
+  {
+    "id": 25,
+    "img": "../img/product/4.png",
+    "name": "OPPO A18 128GB 4GB Glowing Black",
+    "price": 250,
+    "old_price":700,
+    "catetory":"feyat_sex"
+  },
+  {
+    "id": 26,
+    "img": "../img/product/4.png",
+    "name": "OPPO A18 128GB 4GB Glowing Black",
+    "price": 250,
+    "old_price":700,
+    "catetory":"feyat_sex"
+  }
+  
+]
